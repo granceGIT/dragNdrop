@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    width: 70vw;
+    margin: 50px auto;
+}
+
+.dropzone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 70px;
+    background-color: tomato;
+    margin: 10px auto;
+}
+
+#draggable{
+    padding: 10px 20px;
+    background-color: #fff;
+    cursor: grab;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#draggable img,span{
+    margin: 0 5px;
+}
+
+.drag-start{
+    display: block;
+}
+
+.drop-enter{
+    background-color: #00ff00;
+}
