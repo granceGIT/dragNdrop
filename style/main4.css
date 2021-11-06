@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+    font-family: souecesans;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: souecesans;
+    src: url(../sheets/SourceSansPro-Regular.ttf);
+}
+
+.container{
+    width: 70vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2,.5fr);
+    justify-items: center;
+    gap:30px;
+}
+
+#new-task{
+    grid-column: span 2;
+    border:2px solid silver;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+#new-task input{
+    border:2px solid silver;
+    border-radius: 4px;
+    padding: 2px 5px;
+    margin: 10px auto;
+    width: 100%;
+}
+
+#add-task{
+    padding: 7px 20px;
+    border:0;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #145eff;
+    color:white;
+    font-weight: bold;
+}
+
+.current-tasks,.completed-tasks{
+    border:1px solid #00ccff;
+    width: 80%;
+    text-align: center;
+}
+
+.completed-tasks__item,.current-tasks__item{
+    height: 50px;
+    padding: 15px 0;
+    border-bottom: 1px solid #5e685e2d;
+    cursor: grab;
+}
+
+.container div>h3{
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    background-color: #145eff;
+    color:white;
+    margin: 0;
+    font-weight: bold;
+}
+
+.current-tasks__item:hover{
+    background-color: #e6fbff;
+}
+
+.completed-tasks__item{
+    background-color: #00ff0d21;
+}

@@ -8,22 +8,24 @@ body{
 
 .container{
     width: 900px;
-    margin: 30px auto;
-    display: grid;
+    margin: 10px auto;
     gap:20px;
     grid-auto-rows: 130px;
     justify-content: space-between;
 }
 
 .container:first-of-type{
+    display: grid;
     grid-template-columns: repeat(4,200px);
 }
 
-.container:last-of-type{
+.container.grid{
+    display: grid;
     grid-template-columns: repeat(3,200px);
 }
 
-.task>h2{
+.task>h2,#output{
+    text-align: center;
     color:white;
     text-align: center;
     font-family:Arial, Helvetica, sans-serif;
@@ -48,10 +50,6 @@ body{
     cursor: grab;
 }
 
-.drag-start{
-    display: block;
-}
-
-.drop-enter{
-    background-color: tomato;
+.predatorPicked{
+    border:3px solid #47ff75;
 }
